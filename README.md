@@ -1,2 +1,3 @@
-# mmd-styled-system
-Created with CodeSandbox
+# MMD Style System
+
+Work in progress styled system based on Styled Components and Rebass.
