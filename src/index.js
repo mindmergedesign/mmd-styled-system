@@ -16,9 +16,9 @@ function App() {
         <Container>
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box>
-              <H1>Heading 1</H1>
-              <H2>Heading 2</H2>
-              <H3>Heading 3</H3>
+              <H1 as="h1">Heading 1</H1>
+              <H2 as="h2">Heading 2</H2>
+              <H3 as="h3">Heading 3</H3>
             </Box>
 
             <Box py={6}>

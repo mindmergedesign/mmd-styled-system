@@ -2,7 +2,15 @@ import styled from "styled-components";
 import { Button as BaseButton } from "rebass";
 
 const Button = styled(BaseButton)`
-  border-radius: 0.25em;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: ${props => props.theme.fontWeights.semibold};
+  line-height: 1.5;
+  border-radius: ${props => props.theme.radii.default};
   cursor: pointer;
   font-family: ${props => props.theme.fonts.sans};
 `;
@@ -12,8 +20,10 @@ Button.defaultProps = {
   borderColor: "transparent",
   border: "2px solid",
   color: "white",
-  px: "1.75em",
-  py: "0.75em"
+  px: "1.5em",
+  py: "0.5em"
 };
+
+Button.displayName = "Button";
 
 export default Button;

@@ -26,19 +26,13 @@ const NavWrapper = styled(Flex)`
 const Nav = props => (
   <NavWrapper as="ul" {...props}>
     <NavItem>
-      <a href="#" activeClassName="active">
-        Home
-      </a>
+      <a href="#">Home</a>
     </NavItem>
     <NavItem>
-      <a href="#" activeClassName="active">
-        About
-      </a>
+      <a href="#">About</a>
     </NavItem>
     <NavItem>
-      <a href="#" activeClassName="active">
-        Contact
-      </a>
+      <a href="#">Contact</a>
     </NavItem>
   </NavWrapper>
 );
