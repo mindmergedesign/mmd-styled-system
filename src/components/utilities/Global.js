@@ -10,5 +10,9 @@ const Global = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  p > *:last-child {
+    margin-bottom: 0;
+  }
+
 `;
 export default Global;

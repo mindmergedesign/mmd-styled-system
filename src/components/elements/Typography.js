@@ -74,6 +74,7 @@ export const Text = styled(StyledText)`
   font-family: ${props => props.theme.fonts.sans};
   font-size: ${props => props.theme.fontSizes[2]}px;
   line-height: ${props => props.theme.lineHeights.normal};
+  margin: 0 0 1em 0;
   ${up("lg")} {
     font-size: ${props => props.theme.fontSizes[3]}px;
   }
