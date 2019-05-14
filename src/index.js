@@ -5,8 +5,9 @@ import { Flex, Box } from "rebass";
 import Layout from "./components/layout/Layout";
 import Section from "./components/layout/Section";
 import Container from "./components/layout/Container";
-import { H1, H2, H3, H4, Text, Lead } from "./components/elements/Typography";
+import { H1, H2, H3, Text, Lead } from "./components/elements/Typography";
 import Button from "./components/elements/Button";
+import Divider from "./components/elements/Divider";
 import theme from "./components/theme";
 
 function App() {
@@ -17,7 +18,13 @@ function App() {
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box>
               <H1 as="h1">Heading 1</H1>
+              <Divider />
               <H2 as="h2">Heading 2</H2>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas eu est eu leo fermentum lacinia. Ut non nulla in turpis
+                aliquam vehicula.
+              </Text>
               <H3 as="h3">Heading 3</H3>
             </Box>
 

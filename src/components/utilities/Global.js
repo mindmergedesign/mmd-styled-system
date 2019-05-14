@@ -3,7 +3,12 @@ import { createGlobalStyle } from "styled-components";
 const Global = createGlobalStyle`
   html {
     box-sizing: border-box;
+  }
+
+  body{
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   *, *:before, *:after {

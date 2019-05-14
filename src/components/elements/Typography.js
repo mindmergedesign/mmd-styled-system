@@ -9,14 +9,8 @@ export const Heading = styled(StyledHeading)`
   line-height: ${props => props.theme.lineHeights.snug};
 `;
 export const H1 = styled(Heading)`
-  font-size: ${props => props.theme.fontSizes[6]}px;
-  ${up("sm")} {
-    font-size: ${props => props.theme.fontSizes[6]}px;
-  }
+  font-size: ${props => props.theme.fontSizes[7]}px;
   ${up("md")} {
-    font-size: ${props => props.theme.fontSizes[7]}px;
-  }
-  ${up("lg")} {
     font-size: ${props => props.theme.fontSizes[8]}px;
   }
   ${up("xl")} {
@@ -24,14 +18,8 @@ export const H1 = styled(Heading)`
   }
 `;
 export const H2 = styled(Heading)`
-  font-size: ${props => props.theme.fontSizes[5]}px;
-  ${up("sm")} {
-    font-size: ${props => props.theme.fontSizes[5]}px;
-  }
+  font-size: ${props => props.theme.fontSizes[6]}px;
   ${up("md")} {
-    font-size: ${props => props.theme.fontSizes[6]}px;
-  }
-  ${up("lg")} {
     font-size: ${props => props.theme.fontSizes[7]}px;
   }
   ${up("xl")} {
@@ -40,32 +28,21 @@ export const H2 = styled(Heading)`
 `;
 export const H3 = styled(Heading)`
   font-size: ${props => props.theme.fontSizes[4]}px;
-  ${up("sm")} {
-    font-size: ${props => props.theme.fontSizes[4]}px;
-  }
+
   ${up("md")} {
     font-size: ${props => props.theme.fontSizes[5]}px;
   }
-  ${up("lg")} {
-    font-size: ${props => props.theme.fontSizes[6]}px;
-  }
   ${up("xl")} {
-    font-size: ${props => props.theme.fontSizes[7]}px;
+    font-size: ${props => props.theme.fontSizes[6]}px;
   }
 `;
 export const H4 = styled(Heading)`
   font-size: ${props => props.theme.fontSizes[3]}px;
-  ${up("sm")} {
-    font-size: ${props => props.theme.fontSizes[3]}px;
-  }
   ${up("md")} {
     font-size: ${props => props.theme.fontSizes[4]}px;
   }
-  ${up("lg")} {
-    font-size: ${props => props.theme.fontSizes[5]}px;
-  }
   ${up("xl")} {
-    font-size: ${props => props.theme.fontSizes[6]}px;
+    font-size: ${props => props.theme.fontSizes[5]}px;
   }
 `;
 
@@ -86,5 +63,5 @@ export const Lead = styled(Text)`
   }
 `;
 export const Footnote = styled(Text)`
-  font-size: 0.75em;
+  font-size: ${props => props.theme.fontSizes[2]}px;
 `;
