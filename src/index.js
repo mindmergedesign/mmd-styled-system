@@ -17,7 +17,7 @@ function App() {
         <Container>
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box>
-              <H1 as="h1">Heading 1</H1>
+              <H1>Heading 1</H1>
               <Divider />
               <H2 as="h2">Heading 2</H2>
               <Text>
@@ -36,9 +36,15 @@ function App() {
               </Lead>
             </Box>
             <Box py={6}>
-              <Button variant="primary">Primary</Button>
-              <Button variant="secondary">Secondary</Button>
-              <Button variant="outline">Outline</Button>
+              <Button variant="primary" mx={4}>
+                Primary
+              </Button>
+              <Button variant="secondary" mx={4}>
+                Secondary
+              </Button>
+              <Button variant="outline" mx={4}>
+                Outline
+              </Button>
             </Box>
             <Box py={6}>
               <Text as="p">

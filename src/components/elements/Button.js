@@ -11,8 +11,8 @@ const Button = styled(BaseButton)`
   font-weight: ${props => props.theme.fontWeights.semibold};
   line-height: 1.5;
   border-radius: ${props => props.theme.radii.default};
-  cursor: pointer;
-  font-family: ${props => props.theme.fonts.sans};
+  cursor: ${props => (props.disabled ? "not-allowed" : "pointer")};
+  opacity: ${props => (props.disabled ? 0.5 : 1)};
 `;
 
 Button.defaultProps = {

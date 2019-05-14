@@ -8,7 +8,9 @@ export const Heading = styled(StyledHeading)`
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ${props => props.theme.lineHeights.snug};
 `;
-export const H1 = styled(Heading)`
+export const H1 = styled(Heading).attrs(props => ({
+  as: props.as || "h1"
+}))`
   font-size: ${props => props.theme.fontSizes[7]}px;
   ${up("md")} {
     font-size: ${props => props.theme.fontSizes[8]}px;
